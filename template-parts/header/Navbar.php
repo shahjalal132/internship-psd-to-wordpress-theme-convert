@@ -7,7 +7,10 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="images/logo.png" class="logo-image" alt="logo">
+            <!-- Display logo dynamically -->
+            <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+            } ?>
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
