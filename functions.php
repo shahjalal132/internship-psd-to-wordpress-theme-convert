@@ -17,3 +17,8 @@ if ( ! defined( 'THEME_DIR_URI' ) ) {
 if ( file_exists( __DIR__ ) . '/inc/healper/Autoloader.php' ) {
     require_once __DIR__ . '/inc/healper/Autoloader.php';
 }
+
+// Include codestar framework
+if ( file_exists( __DIR__ ) . '/inc/codestar-framework/codestar-framework.php' ) {
+require_once __DIR__ . '/inc/codestar-framework/codestar-framework.php';
+}
