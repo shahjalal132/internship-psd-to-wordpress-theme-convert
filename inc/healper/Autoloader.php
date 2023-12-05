@@ -1,7 +1,7 @@
 <?php
 /**
  * Auto Loader Template
- * 
+ *
  * @package oop
  */
 
@@ -21,7 +21,7 @@ function autoloader( $className ) {
 // Register this autoload function
 spl_autoload_register( 'autoloader' );
 
-
 // Loading Classes
-$themeSupport = new Theme_Support();
-$enqueueAssets = new Enqueue_Assets();
+$themeSupport    = new Theme_Support();
+$enqueueAssets   = new Enqueue_Assets();
+$registerNavMenu = new Register_Nav_Menu();
