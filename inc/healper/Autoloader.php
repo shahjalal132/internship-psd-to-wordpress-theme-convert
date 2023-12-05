@@ -1,6 +1,8 @@
 <?php
 /**
- * Class Loader Template
+ * Auto Loader Template
+ * 
+ * @package oop
  */
 
 function autoloader( $className ) {
@@ -19,5 +21,6 @@ function autoloader( $className ) {
 // Register this autoload function
 spl_autoload_register( 'autoloader' );
 
-// loading classes
-$enqueueAssets = new Enqueue_Assets();
+
+// Loading Classes
+$themeSupport = new Theme_Support();

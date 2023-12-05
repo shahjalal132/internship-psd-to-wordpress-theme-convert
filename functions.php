@@ -14,6 +14,6 @@ if ( ! defined( 'THEME_DIR_URI' ) ) {
 }
 
 // Include Auto loader file
-if ( file_exists( __DIR__ ) . '/inc/helper/Autoloader.php' ) {
-require_once __DIR__ . '/inc/helper/Autoloader.php';
+if ( file_exists( __DIR__ ) . '/inc/healper/Autoloader.php' ) {
+    require_once __DIR__ . '/inc/healper/Autoloader.php';
 }

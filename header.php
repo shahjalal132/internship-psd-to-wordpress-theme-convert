@@ -1,22 +1,19 @@
-<?php 
+<?php
 /**
  * Header template
  */
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 
 <head>
     <!-- --- Meta Data --- -->
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( "charset" )?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="best website">
     <meta name="description" content="best website">
-
-    <!-- --- Page Title --- -->
-    <title> HTML CSS Task </title>
 
     <!-- --- Fonts --- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,9 +36,13 @@
 
     <!-- [if lt ie 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif] -->
 
+    <?php wp_head();?>
 </head>
 
-<body>
+<body <?php body_class();?>>
+    <?php if ( function_exists( 'wp_body_open' ) ) {
+    wp_body_open();
+}?>
 
     <!-- ========== Header Section Start ========== -->
     <header class="header-section shadow-sm">
