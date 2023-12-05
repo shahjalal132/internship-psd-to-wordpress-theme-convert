@@ -1,0 +1,147 @@
+
+
+/*********************************
+    [Basic]
+*********************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	outline: none;
+}
+
+body {
+	color: #000;
+	line-height: 1.3;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: ;
+}
+
+:root {
+	--primary-color: #00000;
+	--secondary-color: #cccccc;
+	--primary-font: 'tahoma';
+	--secondary-font: 'arial';
+}
+
+/*********************************
+    [Typhography]
+*********************************/
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+span {}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+.logo-image{
+	width: 170px;
+	height: auto;
+}
+
+.header-section ul li a{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	color: #333369 !important;
+}
+
+.contact-now-btn{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	background-color: #ff6d3c;
+	color: #ffffff;
+}
+
+#hero-section{
+	background-image: url("/images/background-image.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 85vh;
+	position: relative;
+}
+
+.text-area h2{
+	font-size: 110px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	-webkit-text-fill-color: #ffffff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ff6d3c;
+
+}
+
+.text-area h3{
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	color: #333366;
+}
+
+.contact-slider-btn{
+	border: 2px solid #ff6d3c;
+}
+
+.slider-phone-image{
+	width: 70%;
+}
+
+.slider-one{
+	margin-top: 60px;
+}
+
+ul.slick-dots {
+    position: absolute;
+    top: 48%;
+    left: -100px;
+}
+
+#footer{
+	background-color: #3c3664;
+}
+
+#footer p{
+	color: #ffffff;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.slick-dots li button{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: transparent;
+	border: 1 px solid #3c3664;
+	margin: 7px;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.slider-active{
+	background: #ff6d3c !important;
+}
+
+.slick-active button{
+	background: #ff6d3c !important;
+}
