@@ -24,3 +24,4 @@ spl_autoload_register( 'autoloader' );
 
 // Loading Classes
 $themeSupport = new Theme_Support();
+$enqueueAssets = new Enqueue_Assets();

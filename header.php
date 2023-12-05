@@ -15,27 +15,6 @@
     <meta name="keywords" content="best website">
     <meta name="description" content="best website">
 
-    <!-- --- Fonts --- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-
-
-
-    <!-- --- All CSS Files --- -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <!-- ----- Custom CSS File ----- -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- [if lt ie 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif] -->
-
     <?php wp_head();?>
 </head>
 
