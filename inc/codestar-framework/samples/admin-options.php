@@ -18,7 +18,7 @@ CSF::createOptions( $prefix, array(
 //
 CSF::createSection( $prefix, array(
   'title'  => 'Logo',
-  'icon'   => 'fas fa-rocket',
+  'icon'   => 'fas fa-image',
   'fields' => array(
 
     //
@@ -34,7 +34,7 @@ CSF::createSection( $prefix, array(
 
 CSF::createSection( $prefix, array(
   'title'  => 'Copyright',
-  'icon'   => 'fas fa-rocket',
+  'icon'   => 'fas fa-font',
   'fields' => array(
 
     //
