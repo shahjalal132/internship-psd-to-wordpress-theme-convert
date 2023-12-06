@@ -9,20 +9,39 @@
     <div class="container">
         <div class="slider container">
 
-            <div class="slider-items d-flex">
-                <div class="slider-texts">
-                    <h2 class="slider-title">Greatest</h2>
-                    <h3 class="slider-subtitle">App Landing Page <br> Your Busienss</h3>
-                    <p class="slider-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="#" class="btn contact-now-btn my-2 my-sm-0 me-5">Get Demo</a>
-                    <a href="#" class="btn contact-slider-btn my-2 my-sm-0">Contact Us</a>
-                </div>
-                <div class="slider-images">
-                    <!-- slider image -->
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/slider-image.png'; ?>" alt="">
-                </div>
-            </div>
-            
+            <?php 
+                // display Slider post type
+                $sliders = new WP_Query([
+                    'post_type' => 'slider-post-type',
+                    'posts_per_page' => -1
+                ]);
+
+                if ( $sliders->have_posts() ) :
+                    while ( $sliders->have_posts() ) : $sliders->the_post();
+                    // get slider data
+                    $title    = get_post_meta( $post->ID, '_slider_title', true );
+                    $subtitle = get_post_meta( $post->ID, '_slider_sub_title', true );
+                    $btn1text = get_post_meta( $post->ID, '_btn1_text', true );
+                    $btn2text = get_post_meta( $post->ID, '_btn_2_text', true );
+                        ?>
+                        <div class="slider-items d-flex">
+                            <div class="slider-texts">
+                                <h2 class="slider-title"><?php echo $title; ?></h2>
+                                <h3 class="slider-subtitle"><?php echo $subtitle; ?></h3>
+                                <p class="slider-description"><?php the_content(); ?></p>
+                                <a href="#" class="btn contact-now-btn my-2 my-sm-0 me-5"><?php echo $btn1text; ?></a>
+                                <a href="#" class="btn contact-slider-btn my-2 my-sm-0"><?php echo $btn2text; ?></a>
+                            </div>
+                            <div class="slider-images">
+                                <!-- slider image -->
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                        </div>
+                    <?php
+                    endwhile;
+                endif;
+            ?>
+
         </div>
     </div>
     </div>
