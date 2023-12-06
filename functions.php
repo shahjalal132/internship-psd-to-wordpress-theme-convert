@@ -22,3 +22,8 @@ if ( file_exists( __DIR__ ) . '/inc/healper/Autoloader.php' ) {
 if ( file_exists( __DIR__ ) . '/inc/codestar-framework/codestar-framework.php' ) {
 require_once __DIR__ . '/inc/codestar-framework/codestar-framework.php';
 }
+
+// Include template-tags file
+if ( file_exists( __DIR__ ) . '/inc/healper/Template-Tags.php' ) {
+require_once __DIR__ . '/inc/healper/Template-Tags.php';
+}

@@ -6,7 +6,7 @@
 
 <!-- ========== Start Copyright area ========== -->
 <footer id="footer">
-        <p class="py-2 text-center">Copyright@ 2021 APPDEV. all Right Reserved.</p>
+        <p class="py-2 text-center"><?php echo get_codestar_options( 'copyright' ); ?></p>
     </footer>
     <!-- ========== End Copyright area ========== -->
 
