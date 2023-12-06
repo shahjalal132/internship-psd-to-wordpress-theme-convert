@@ -8,7 +8,7 @@
 <section id="hero-section">
     <div class="container">
         <div class="slider container">
-            <div class="row">
+            <div class="row slider-children">
                 <div class="slider-texts col-lg-8 col-md-8 col-sm-12">
                     <h2 class="slider-title">Greatest</h2>
                     <h3 class="slider-subtitle">App Landing Page <br> Your Busienss</h3>
