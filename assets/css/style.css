@@ -124,3 +124,13 @@ footer#footer {
 .slider-images img{
 	max-width: 100%;
 }
+
+img.attachment-post-thumbnail {
+    width: 70%;
+    object-fit: contain;
+}
+
+.slider-items {
+    align-items: center;
+    justify-content: space-between;
+}
