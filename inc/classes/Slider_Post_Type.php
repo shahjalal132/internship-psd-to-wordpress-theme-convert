@@ -46,7 +46,7 @@ class Slider_Post_Type {
             'label'               => __( 'Slider', 'wordpress-theme-task' ),
             'description'         => __( 'Slider Post Type', 'wordpress-theme-task' ),
             'labels'              => $labels,
-            'supports'            => [ 'title', 'editor', 'thumbnail' ],
+            'supports'            => [ 'editor', 'thumbnail' ],
             'hierarchical'        => false,
             'public'              => true,
             'show_ui'             => true,

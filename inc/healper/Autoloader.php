@@ -26,3 +26,4 @@ $themeSupport    = new Theme_Support();
 $enqueueAssets   = new Enqueue_Assets();
 $registerNavMenu = new Register_Nav_Menu();
 $sliderPostType  = new Slider_Post_Type();
+$customMetabox   = new Custom_Metabox();
