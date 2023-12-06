@@ -27,3 +27,8 @@ if ( file_exists( __DIR__ ) . '/inc/codestar-framework/codestar-framework.php' )
 if ( file_exists( __DIR__ ) . '/inc/healper/Template-Tags.php' ) {
     require_once __DIR__ . '/inc/healper/Template-Tags.php';
 }
+
+// Include bootstrap_5_wp_nav_menu_walker
+if ( file_exists( __DIR__ ) . '/inc/bootstrap_5_wp_nav_menu_walker/bootstrap_5_wp_nav_menu_walker.php' ) {
+    require_once __DIR__ . '/inc/bootstrap_5_wp_nav_menu_walker/bootstrap_5_wp_nav_menu_walker.php';
+}
