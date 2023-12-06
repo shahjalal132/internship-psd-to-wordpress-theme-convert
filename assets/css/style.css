@@ -41,7 +41,7 @@ a:hover {
 /* hero section design */
 
 #hero-section{
-	background-image: url("/images/background-image.jpg");
+	background-image: url("../images/background-image.jpg");
 	background-size: cover;
 	background-position: center;
 	width: 100%;
