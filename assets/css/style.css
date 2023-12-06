@@ -50,6 +50,10 @@ a:hover {
 	position: relative;
 }
 
+section#hero-section {
+    overflow: hidden;
+}
+
 .slider{
 	position: absolute;
 	top: 50%;
@@ -79,6 +83,11 @@ a:hover {
 
 .contact-slider-btn{
 	border: 2px solid #ff6d3c;
+}
+
+.contact-now-btn,
+.contact-slider-btn{
+	padding: 12px 25px;
 }
 
 ul.slick-dots {
