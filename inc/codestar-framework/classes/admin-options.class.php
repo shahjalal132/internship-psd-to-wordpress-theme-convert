@@ -23,7 +23,7 @@ if ( ! class_exists( 'CSF_Options' ) ) {
     public $args         = array(
 
       // framework title
-      'framework_title'         => 'Codestar Framework <small>by Codestar</small>',
+      'framework_title'         => 'Theme Options',
       'framework_class'         => '',
 
       // menu settings
@@ -59,7 +59,7 @@ if ( ! class_exists( 'CSF_Options' ) ) {
       'admin_bar_menu_priority' => 50,
 
       // footer
-      'footer_text'             => 'Thank you for creating with Codestar Framework',
+      'footer_text'             => '',
       'footer_after'            => '',
       'footer_credit'           => '',
 

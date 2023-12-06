@@ -4,12 +4,12 @@
  */
 
 // Define theme directory path
-if ( ! defined( 'THEME_DIR_PATH' ) ) {
+if ( !defined( 'THEME_DIR_PATH' ) ) {
     define( 'THEME_DIR_PATH', untrailingslashit( get_template_directory() ) );
 }
 
 // Define theme directory uri
-if ( ! defined( 'THEME_DIR_URI' ) ) {
+if ( !defined( 'THEME_DIR_URI' ) ) {
     define( 'THEME_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
 }
 
@@ -20,5 +20,10 @@ if ( file_exists( __DIR__ ) . '/inc/healper/Autoloader.php' ) {
 
 // Include codestar framework
 if ( file_exists( __DIR__ ) . '/inc/codestar-framework/codestar-framework.php' ) {
-require_once __DIR__ . '/inc/codestar-framework/codestar-framework.php';
+    require_once __DIR__ . '/inc/codestar-framework/codestar-framework.php';
+}
+
+// Include Template Tags custom function template
+if ( file_exists( __DIR__ ) . '/inc/healper/Template-Tags.php' ) {
+    require_once __DIR__ . '/inc/healper/Template-Tags.php';
 }
