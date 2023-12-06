@@ -25,3 +25,4 @@ spl_autoload_register( 'autoloader' );
 $themeSupport    = new Theme_Support();
 $enqueueAssets   = new Enqueue_Assets();
 $registerNavMenu = new Register_Nav_Menu();
+$slider          = new Custom_Post_Type();
