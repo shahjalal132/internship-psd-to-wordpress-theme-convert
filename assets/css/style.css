@@ -1,4 +1,5 @@
-
+@import url('styles-parts/services-section.css');
+@import url('styles-parts/pricing-section.css');
 
 /*********************************
     [Basic]
@@ -142,4 +143,12 @@ img.attachment-post-thumbnail {
 .slider-items {
     align-items: center;
     justify-content: space-between;
+}
+
+.pt-200{
+	padding-top: 200px;
+}
+
+.pb-100{
+	padding-bottom: 100px;
 }

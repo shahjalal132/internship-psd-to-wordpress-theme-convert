@@ -1,0 +1,74 @@
+/* pricing section design */
+
+#pricing-section {
+    background-color: #fff9f5;
+}
+
+.subscription {
+    display: inline-block;
+    border: 2px solid #ff803c;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.monthly,
+.yearly {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333369;
+    font-weight: 500;
+    padding: 8px 12px back;
+    padding: 8px 12px;
+    transition: 0.2s;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.monthly:hover,
+.yearly:hover{
+    background-color: #ff803c;
+    color: #fff9f5;
+}
+
+.pricing-items {
+	margin-top: 70px;
+}
+
+.pricing-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333369;
+}
+
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: #333369;
+}
+
+.price-amount{
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.price-text{
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333369;
+}
