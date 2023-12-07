@@ -34,6 +34,13 @@ a:hover {
 	font-weight: 500;
 	background-color: #ff6d3c;
 	color: #ffffff;
+	border: 2px solid transparent;
+	text-transform: capitalize;
+}
+
+.contact-now-btn:hover{
+	background-color: transparent;
+	border: 2px solid #ff6d3c;
 }
 
 
@@ -86,6 +93,12 @@ section#hero-section {
 
 .contact-slider-btn{
 	border: 2px solid #ff6d3c;
+	text-transform: capitalize;
+}
+
+.contact-slider-btn:hover{
+	background-color: #ff6d3c;
+	color: #ffffff;
 }
 
 .contact-now-btn,
