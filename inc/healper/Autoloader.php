@@ -29,3 +29,4 @@ $sliderPostType   = new Slider_Post_Type();
 $customMetabox    = new Custom_Metabox();
 $servicesPostType = new Services_Post_Type();
 $pricePostType    = new Pricing_Post_Type();
+$priceMetabox     = new Metabox_For_Price();
