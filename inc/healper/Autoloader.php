@@ -28,3 +28,4 @@ $registerNavMenu  = new Register_Nav_Menu();
 $sliderPostType   = new Slider_Post_Type();
 $customMetabox    = new Custom_Metabox();
 $servicesPostType = new Services_Post_Type();
+$pricePostType    = new Pricing_Post_Type();
