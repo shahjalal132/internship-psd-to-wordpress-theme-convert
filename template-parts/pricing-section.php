@@ -46,7 +46,7 @@
                             $service6 = get_post_meta( $post->ID, '_service6', true );
                                 ?>
                                     <div class="service col-lg-4 col-md-4 col-sm-12 text-center">
-                                        <h4 class="pricing-title"><?php the_title(); ?></h4>
+                                        <h4 class="pricing-title"><?php echo $price_plan; ?></h4>
                                         <h3 class="price"><sup>$</sup><span class="price-amount"><?php echo $amount; ?></span>/m</h3>
                                         <p class="price-text"><?php echo $service1; ?></p>
                                         <p class="price-text"><?php echo $service2; ?></p>

@@ -46,7 +46,7 @@ class Pricing_Post_Type {
             'label'               => __( 'Prices', 'wordpress-theme-task' ),
             'description'         => __( 'our Prices', 'wordpress-theme-task' ),
             'labels'              => $labels,
-            'supports'            => ['title', 'editor'],
+            'supports'            => ['title'],
             'taxonomies'          => ['category', 'post_tag'],
             'hierarchical'        => false,
             'public'              => true,
