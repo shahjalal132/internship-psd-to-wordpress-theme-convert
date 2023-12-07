@@ -25,41 +25,41 @@
             <div class="container p-0">
                 <div class="row service-wrapper">
 
-                    <div class="service col-lg-4 col-md-4 col-sm-12 text-center">
-                        <h4 class="pricing-title">Starter Plan</h4>
-                        <h3 class="price"><sup>$</sup><span class="price-amount">400</span>/m</h3>
-                        <p class="price-text">Connect 2 Redius Servers</p>
-                        <p class="price-text">Key Batching Editing</p>
-                        <p class="price-text">Real Time & automic editor</p>
-                        <p class="price-text">Real Time monitoring</p>
-                        <p class="price-text">Unlimited altering</p>
-                        <p class="price-text">30 Days trial no engagment</p>
-                        <a href="#" class="service-btn">Buy Now</a>
-                    </div>
+                   <?php 
+                        // Start the loop.
+                        $priceInfoFromPricePostType = new WP_Query([
+                            'post_type' => 'pricing',
+                            'posts_per_page' => -1
+                        ]);
 
-                    <div class="service col-lg-4 col-md-4 col-sm-12 text-center">
-                        <h4 class="pricing-title">Standard</h4>
-                        <h3 class="price"><sup>$</sup><span class="price-amount">400</span>/m</h3>
-                        <p class="price-text">Connect 2 Redius Servers</p>
-                        <p class="price-text">Key Batching Editing</p>
-                        <p class="price-text">Real Time & automic editor</p>
-                        <p class="price-text">Real Time monitoring</p>
-                        <p class="price-text">Unlimited altering</p>
-                        <p class="price-text">30 Days trial no engagment</p>
-                        <a href="#" class="service-btn">Buy Now</a>
-                    </div>
+                        if ( $priceInfoFromPricePostType->have_posts() ) :
+                            while ( $priceInfoFromPricePostType->have_posts() ) : $priceInfoFromPricePostType->the_post();
 
-                    <div class="service col-lg-4 col-md-4 col-sm-12 text-center">
-                        <h4 class="pricing-title">Premium</h4>
-                        <h3 class="price"><sup>$</sup><span class="price-amount">400</span>/m</h3>
-                        <p class="price-text">Connect 2 Redius Servers</p>
-                        <p class="price-text">Key Batching Editing</p>
-                        <p class="price-text">Real Time & automic editor</p>
-                        <p class="price-text">Real Time monitoring</p>
-                        <p class="price-text">Unlimited altering</p>
-                        <p class="price-text">30 Days trial no engagment</p>
-                        <a href="#" class="service-btn">Buy Now</a>
-                    </div>
+                            // get meta box value
+                            $price_plan = get_post_meta( $post->ID, '_price_plan', true );
+                            $amount = get_post_meta( $post->ID, '_amount', true );
+                            $service1 = get_post_meta( $post->ID, '_service1', true );
+                            $service2 = get_post_meta( $post->ID, '_service2', true );
+                            $service3 = get_post_meta( $post->ID, '_service3', true );
+                            $service4 = get_post_meta( $post->ID, '_service4', true );
+                            $service5 = get_post_meta( $post->ID, '_service5', true );
+                            $service6 = get_post_meta( $post->ID, '_service6', true );
+                                ?>
+                                    <div class="service col-lg-4 col-md-4 col-sm-12 text-center">
+                                        <h4 class="pricing-title"><?php the_title(); ?></h4>
+                                        <h3 class="price"><sup>$</sup><span class="price-amount"><?php echo $amount; ?></span>/m</h3>
+                                        <p class="price-text"><?php echo $service1; ?></p>
+                                        <p class="price-text"><?php echo $service2; ?></p>
+                                        <p class="price-text"><?php echo $service3; ?></p>
+                                        <p class="price-text"><?php echo $service4; ?></p>
+                                        <p class="price-text"><?php echo $service5; ?></p>
+                                        <p class="price-text"><?php echo $service6; ?></p>
+                                        <a href="#" class="service-btn">Buy Now</a>
+                                    </div>
+                                <?php
+                            endwhile;
+                        endif;
+                   ?>
                     
                 </div>
             </div>
