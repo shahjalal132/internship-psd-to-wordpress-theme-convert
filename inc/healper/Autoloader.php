@@ -22,8 +22,9 @@ function autoloader( $className ) {
 spl_autoload_register( 'autoloader' );
 
 // Loading Classes
-$themeSupport    = new Theme_Support();
-$enqueueAssets   = new Enqueue_Assets();
-$registerNavMenu = new Register_Nav_Menu();
-$sliderPostType  = new Slider_Post_Type();
-$customMetabox   = new Custom_Metabox();
+$themeSupport     = new Theme_Support();
+$enqueueAssets    = new Enqueue_Assets();
+$registerNavMenu  = new Register_Nav_Menu();
+$sliderPostType   = new Slider_Post_Type();
+$customMetabox    = new Custom_Metabox();
+$servicesPostType = new Services_Post_Type();
