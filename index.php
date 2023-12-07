@@ -6,4 +6,7 @@
 <!-- Services section -->
 <?php get_template_part( 'template-parts/services-section' )?>
 
+<!-- app-slider section -->
+<?php get_template_part( 'template-parts/app-slider' )?>
+
 <?php get_footer()?>

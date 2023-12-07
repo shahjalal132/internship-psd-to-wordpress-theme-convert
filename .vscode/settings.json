@@ -2,5 +2,5 @@
     "cSpell.words": [
         "jalal"
     ],
-    "editor.inlineSuggest.showToolbar": "onHover"
+    "editor.inlineSuggest.showToolbar": "always"
 }
