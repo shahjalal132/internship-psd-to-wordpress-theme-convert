@@ -4,7 +4,10 @@
 <?php get_template_part( 'template-parts/hero-section' )?>
 
 <!-- Services section -->
-<?php get_template_part( 'template-parts/services-section' )?>
+<?php // get_template_part( 'template-parts/services-section' )?>
+
+<!-- Services section demo template -->
+<?php get_template_part( 'template-parts/services-section-demo' )?>
 
 <!-- app-slider section -->
 <?php get_template_part( 'template-parts/app-slider' )?>

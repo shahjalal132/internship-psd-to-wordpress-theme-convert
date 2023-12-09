@@ -21,7 +21,7 @@
     </div>
 
     <div class="services-items">
-        <div class="container p-0">
+        <div class="container">
             <div class="row service-wrapper">
 
                 <?php 
@@ -34,7 +34,7 @@
                     if ( $services_item->have_posts() ) :
                         while ( $services_item->have_posts() ) : $services_item->the_post();
                             ?>
-                                <div class="service col-lg-4 col-md-4 col-sm-12 text-center">
+                                <div class="service col-lg-4 col-md-6 col-sm-12 text-center">
                                     <?php the_post_thumbnail(); ?>
                                     <h3 class="service-title"><?php the_title(); ?></h3>
                                     <p class="service-summery"><?php the_content(); ?></p>
