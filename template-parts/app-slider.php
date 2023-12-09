@@ -11,9 +11,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h2 class="services-heading">Screen</h2>
-                    <h3 class="services-sub-heading">Awesomone App Screenshot</h3>
-                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    <h2 class="common-heading">Screen</h2>
+                    <h3 class="common-sub-heading">Awesomone App Screenshot</h3>
+                    <p class="common-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor<br> incididunt ut labore et dolore accumsan lacus vel facilisis.</p>
                 </div>
             </div>
