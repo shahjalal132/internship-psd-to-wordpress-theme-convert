@@ -1,74 +1,100 @@
 /* pricing section design */
 
-#pricing-section {
-    background-color: #fff9f5;
+#pricing {
+    background-color: #FFF9F5;
 }
 
-.subscription {
-    display: inline-block;
-    border: 2px solid #ff803c;
-    padding: 8px;
-    border-radius: 8px;
-    margin-top: 50px;
+.pricing-package-card {
+    background-color: #fff;
+    padding: 30px;
+    transition: all 0.3s ease-in;
+    margin-bottom: 30px;
 }
 
-.monthly,
-.yearly {
+.pricing-package-card:hover {
+    box-shadow: 0px 0px 40px 0px rgba(113,113,113,0.05);
+}
+
+.pricing-package-card:hover .buy-now-btn {
+    background-color: #ff6d3c;
+    color: #fff;
+}
+
+.pricing-package-card h6 {
     font-family: 'Poppins', sans-serif;
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 16px;
-    color: #333369;
-    font-weight: 500;
-    padding: 8px 12px back;
-    padding: 8px 12px;
-    transition: 0.2s;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-}
-
-.monthly:hover,
-.yearly:hover{
-    background-color: #ff803c;
-    color: #fff9f5;
-}
-
-.pricing-items {
-	margin-top: 70px;
-}
-
-.pricing-title{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #333369;
-}
-
-.price{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 30px 0;
-    color: #333369;
-}
-
-.price-amount{
-    font-size: 40px;
-    margin-left: 5px;
-}
-
-.price-text{
-    font-family: 'Roboto';
-    font-size: 16px;
+    color: #336;
+    font-weight: 700;
     text-transform: capitalize;
-    color: #333369;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.pricing-package-card h3 {
+    margin-bottom: 20px;
+    word-spacing: -14px;
+    position: relative;
+    display: inline-block;
+    color: #336;
+    font-size: 48px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.package-service{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.package-service li{
+    margin-bottom: 8px;
+}
+.control-btn{
+	border: 0;
+	outline: 0;
+	font-family: "Poppins",sans-serif;
+	color: #336;
+	background-color: transparent;
+	text-transform: capitalize;
+	border-radius: 8px;
+	font-weight: 500;
+	padding: 10px 12px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.btn-active{
+	background-color: #ff6d3c;
+	color: #ffffff;
+}
+
+.controls-wrapper{
+	border: 2px solid #ff6d3c;
+	padding: 5px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.buy-now-btn {
+    background: transparent;
+    border: 2px solid #ff6d3c;
+    color: #336;
+    padding: 12px 30px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 15px;
 }

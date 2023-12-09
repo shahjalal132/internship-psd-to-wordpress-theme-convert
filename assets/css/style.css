@@ -18,6 +18,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.pb-60{
+	padding-bottom: 60px;
+}
+
 
 .common-heading {
     font-family: "Poppins",sans-serif;
