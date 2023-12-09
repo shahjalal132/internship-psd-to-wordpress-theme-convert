@@ -35,13 +35,15 @@ class Enqueue_Assets {
         wp_register_script( "slick", THEME_DIR_URI . "/assets/js/slick.js", ['jquery'], false, true );
         wp_register_script( "bootstrap", THEME_DIR_URI . "/assets/js/bootstrap.bundle.js", ['jquery'], false, true );
         wp_register_script( "modernizr", THEME_DIR_URI . "/assets/js/modernizr.min.js", ['jquery'], false, true );
-        wp_register_script( "custom-js", THEME_DIR_URI . "/assets/js/custom.js", ['jquery', 'bootstrap', "slick"], false, true );
+        wp_register_script( "mixitup", THEME_DIR_URI . "/assets/js/mixitup.min.js", ['jquery'], false, true );
+        wp_register_script( "custom-js", THEME_DIR_URI . "/assets/js/custom.js", ['jquery', 'bootstrap', "slick", "mixitup"], false, true );
 
         // Enqueue JS
         wp_enqueue_script( "jquery" );
         wp_enqueue_script( "slick" );
         wp_enqueue_script( "bootstrap" );
         wp_enqueue_script( "modernizr" );
+        wp_enqueue_script( "mixitup" );
         wp_enqueue_script( "custom-js" );
 
     }

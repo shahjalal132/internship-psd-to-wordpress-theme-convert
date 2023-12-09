@@ -19,6 +19,7 @@
             </div>
         </div>
 
+        <!-- mixitup control -->
         <div class="pricing-tabs">
             <div>
                 <div class="filter-controls pb-60">
@@ -32,10 +33,11 @@
             </div>
         </div>
 
+        <!-- mixitup filter items -->
         <div class="pricing-packages">
             <div class="row mix-filter-wrapper">
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="mix monthly col-lg-4 col-md-6 col-sm-12">
                     <div class="pricing-package-card monthly">
                         <h6>Starter plan</h6>
                         <h3><sup>$</sup><span class="price">1200</span><span class="package-time">/y</span></h3>
@@ -50,7 +52,8 @@
                         <a href="#" class="buy-now-btn">Buy Now</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                <div class="max yearly col-lg-4 col-md-6 col-sm-12">
                     <div class="pricing-package-card monthly">
                         <h6>Starter plan</h6>
                         <h3><sup>$</sup><span class="price">1200</span><span class="package-time">/y</span></h3>
@@ -65,7 +68,8 @@
                         <a href="#" class="buy-now-btn">Buy Now</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                <div class="max monthly col-lg-4 col-md-6 col-sm-12">
                     <div class="pricing-package-card monthly">
                         <h6>Starter plan</h6>
                         <h3><sup>$</sup><span class="price">1200</span><span class="package-time">/y</span></h3>

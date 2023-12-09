@@ -68,7 +68,8 @@
 	-o-border-radius: 8px;
 }
 
-.btn-active{
+.btn-active,
+.mixitup-control-active{
 	background-color: #ff6d3c;
 	color: #ffffff;
 }
