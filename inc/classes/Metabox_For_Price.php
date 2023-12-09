@@ -39,6 +39,7 @@
      public function output_callback_function( $post )
      {
          $price_plan = get_post_meta( $post->ID, '_price_plan', true );
+         $select_price_plan = get_post_meta( $post->ID, '_select_price_plan', true );
          $amount = get_post_meta( $post->ID, '_amount', true );
          $service1 = get_post_meta( $post->ID, '_service1', true );
          $service2 = get_post_meta( $post->ID, '_service2', true );
@@ -47,8 +48,27 @@
          $service5 = get_post_meta( $post->ID, '_service5', true );
          $service6 = get_post_meta( $post->ID, '_service6', true );
          ?>
+            <p>
+            <label for="select_"><?php esc_html_e( 'Select Package Plan', 'wordpress-theme-task' );?></label>
+            <select name="select_price_plan" id="select_price_plan">
+
+                <option value="">
+                    <?php esc_html_e( 'Select Package Plan', 'wordpress-theme-task' );?>
+                </option>
+
+                <option value="monthly" <?php selected( $select_price_plan, 'monthly' ); ?>>
+                    <?php esc_html_e( 'Monthly', 'wordpress-theme-task' );?>
+                </option>
+
+                <option value="yearly" <?php selected( $select_price_plan, 'yearly' ); ?>>
+                    <?php esc_html_e( 'Yearly', 'wordpress-theme-task' );?>
+                </option>
+
+
+            </select>
+            </p>
              <p>
-                <label for="price_plan"><?php esc_html_e( 'Price Plan', 'wordpress-theme-task' );?></label>
+                <label for="price_plan"><?php esc_html_e( 'Package Name', 'wordpress-theme-task' );?></label>
                 <input type="text" class="widefat" value="<?php echo esc_attr( $price_plan );?>" name="price_plan" id="price_plan" placeholder="Price Plan">
             </p>
              <p>
@@ -92,6 +112,7 @@
      {
         // get meta value
          $price_plan = isset( $_POST['price_plan'] ) ? $_POST['price_plan'] : '';
+         $select_price_plan = isset( $_POST['select_price_plan'] ) ? $_POST['select_price_plan'] : '';
          $amount     = isset( $_POST['amount'] ) ? $_POST['amount'] : '';
          $service1   = isset( $_POST['service1'] ) ? $_POST['service1'] : '';
          $service2   = isset( $_POST['service2'] ) ? $_POST['service2'] : '';
@@ -124,6 +145,9 @@
          }
          if ( array_key_exists( 'service6', $_POST ) ) {
              update_post_meta( $post_id, '_service6', $service6 );
+         }
+         if ( array_key_exists( 'select_price_plan', $_POST ) ) {
+             update_post_meta( $post_id, '_select_price_plan', $select_price_plan );
          }
      }
  }
