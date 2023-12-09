@@ -29,7 +29,7 @@
                 ] )
                 ?>
             <div class="d-flex my-2 my-lg-0">
-                <button class="btn contact-now-btn my-2 my-sm-0" type="submit">Contact Now</button>
+                <button class="btn service-read-more my-2 my-sm-0" type="submit">Contact Now</button>
             </div>
         </div>
     </div>

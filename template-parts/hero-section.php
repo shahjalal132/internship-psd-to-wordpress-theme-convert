@@ -29,8 +29,8 @@
                                 <h2 class="slider-title"><?php echo $title; ?></h2>
                                 <h3 class="slider-subtitle"><?php echo $subtitle; ?></h3>
                                 <p class="slider-description"><?php the_content(); ?></p>
-                                <a href="#" class="btn contact-now-btn my-2 my-sm-0 me-3"><?php echo $btn1text; ?></a>
-                                <a href="#" class="btn contact-slider-btn my-2 my-sm-0"><?php echo $btn2text; ?></a>
+                                <a href="#" class="btn service-read-more my-2 my-sm-0 me-3"><?php echo $btn1text; ?></a>
+                                <a href="#" class="btn service-read-more my-2 my-sm-0"><?php echo $btn2text; ?></a>
                             </div>
                             <div class="slider-images">
                                 <!-- slider image -->
