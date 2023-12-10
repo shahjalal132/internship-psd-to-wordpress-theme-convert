@@ -65,7 +65,7 @@
 
                                             <h3>
                                                 <sup class="currency-symbol">
-                                                    <?php echo $select_currency_symbol; ?>
+                                                    <?php echo get_currency_symbol($select_currency_symbol); ?>
                                                 </sup>
                                                 <span class="price"><?php echo $amount; ?></span>
                                                 <span class="package-time">/<?php echo get_monthly_yearly_plan($select_price_plan); ?>
