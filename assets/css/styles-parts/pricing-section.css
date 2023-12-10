@@ -99,3 +99,13 @@
     text-decoration: none;
     margin-top: 15px;
 }
+
+span.package-time {
+    font-size: 25px;
+}
+
+sup.currency-symbol {
+    font-size: 20px;
+    top: -2rem;
+    margin-right: 5px;
+}

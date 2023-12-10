@@ -61,7 +61,7 @@
                                      <div class="mix <?php echo $select_price_plan; ?> col-lg-4 col-md-6 col-sm-12">
                                         <div class="pricing-package-card <?php echo $select_price_plan; ?>">
                                             <h6><?php echo $price_plan; ?></h6>
-                                            <h3><sup>$</sup><span class="price"><?php echo $amount; ?></span><span class="package-time">/y</span></h3>
+                                            <h3><sup class="currency-symbol">$</sup><span class="price"><?php echo $amount; ?></span><span class="package-time">/<?php echo get_monthly_yearly_plan($select_price_plan); ?></span></h3>
                                             <ul class="package-service">
                                                 <li class="common-description"><?php echo $service1; ?></li>
                                                 <li class="common-description"> <?php echo $service2; ?></li>

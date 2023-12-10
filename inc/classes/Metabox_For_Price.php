@@ -39,6 +39,7 @@
      public function output_callback_function( $post )
      {
          $price_plan = get_post_meta( $post->ID, '_price_plan', true );
+         $select_currency_symbol = get_post_meta( $post->ID, '_select_currency', true );
          $select_price_plan = get_post_meta( $post->ID, '_select_price_plan', true );
          $amount = get_post_meta( $post->ID, '_amount', true );
          $service1 = get_post_meta( $post->ID, '_service1', true );
@@ -48,6 +49,14 @@
          $service5 = get_post_meta( $post->ID, '_service5', true );
          $service6 = get_post_meta( $post->ID, '_service6', true );
          ?>
+
+            <p>
+                <label for="select_currency_symbol">Select Currency</label>
+                <select name="select_currency" id="select_currency_symbol">
+                    <?php echo get_currency_symbol(); ?>
+                </select>
+            </p>
+
             <p>
             <label for="select_"><?php esc_html_e( 'Select Package Plan', 'wordpress-theme-task' );?></label>
             <select name="select_price_plan" id="select_price_plan">
@@ -112,6 +121,7 @@
      {
         // get meta value
          $price_plan = isset( $_POST['price_plan'] ) ? $_POST['price_plan'] : '';
+         $select_currency_symbol = isset( $_POST['select_currency'] ) ? $_POST['select_currency'] : '';
          $select_price_plan = isset( $_POST['select_price_plan'] ) ? $_POST['select_price_plan'] : '';
          $amount     = isset( $_POST['amount'] ) ? $_POST['amount'] : '';
          $service1   = isset( $_POST['service1'] ) ? $_POST['service1'] : '';
@@ -122,6 +132,9 @@
          $service6   = isset( $_POST['service6'] ) ? $_POST['service6'] : '';
 
         //  update meta value
+         if ( array_key_exists( 'select_currency', $_POST ) ) {
+             update_post_meta( $post_id, '_select_currency', $select_currency_symbol );
+         }
          if ( array_key_exists( 'price_plan', $_POST ) ) {
              update_post_meta( $post_id, '_price_plan', $price_plan );
          }
