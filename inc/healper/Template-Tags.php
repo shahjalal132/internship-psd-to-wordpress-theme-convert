@@ -67,7 +67,7 @@ if ( !function_exists( 'get_currency_symbol' ) ) {
             'CZK' => 'Kč',
             'HUF' => 'Ft',
         ];
-        
+
         if ( is_array( $currency_symbols ) && count( $currency_symbols ) > 0 ) {
             foreach ( $currency_symbols as $key => $value ) {
                 ?>
@@ -79,3 +79,4 @@ if ( !function_exists( 'get_currency_symbol' ) ) {
         }
     }
 }
+

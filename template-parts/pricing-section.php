@@ -49,6 +49,7 @@
 
                             // get meta box value
                             $price_plan = get_post_meta( $post->ID, '_price_plan', true );
+                            $select_currency_symbol = get_post_meta( $post->ID, '_select_currency', true );
                             $select_price_plan = get_post_meta( $post->ID, '_select_price_plan', true );
                             $amount = get_post_meta( $post->ID, '_amount', true );
                             $service1 = get_post_meta( $post->ID, '_service1', true );
@@ -61,7 +62,16 @@
                                      <div class="mix <?php echo $select_price_plan; ?> col-lg-4 col-md-6 col-sm-12">
                                         <div class="pricing-package-card <?php echo $select_price_plan; ?>">
                                             <h6><?php echo $price_plan; ?></h6>
-                                            <h3><sup class="currency-symbol">$</sup><span class="price"><?php echo $amount; ?></span><span class="package-time">/<?php echo get_monthly_yearly_plan($select_price_plan); ?></span></h3>
+
+                                            <h3>
+                                                <sup class="currency-symbol">
+                                                    <?php echo $select_currency_symbol; ?>
+                                                </sup>
+                                                <span class="price"><?php echo $amount; ?></span>
+                                                <span class="package-time">/<?php echo get_monthly_yearly_plan($select_price_plan); ?>
+                                                </span>
+                                            </h3>
+
                                             <ul class="package-service">
                                                 <li class="common-description"><?php echo $service1; ?></li>
                                                 <li class="common-description"> <?php echo $service2; ?></li>
