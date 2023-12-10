@@ -85,6 +85,18 @@
                 <label for="amount"><?php esc_html_e( 'Amount', 'wordpress-theme-task' );?></label>
                 <input type="text" class="widefat" value="<?php echo esc_attr( $amount );?>" name="amount" id="amount" placeholder="Amount">
             </p>
+
+            <!-- dynamic add new field -->
+            <div class="pricing-package-metabox">
+                <div class="service-field">
+                    <label for="add_new_service"><?php esc_html_e( 'Add New Service', 'wordpress-theme-task' ); ?></label>
+                    <input type="text" name="add_new_service" id="add_new_service" class="widefat" placeholder ="Add New Service" value="" style="margin-bottom: 10px;">
+                </div>
+                <!-- Add new Button -->
+                <button id="add_new_service" class="button button-primary button-large" type="button"><?php esc_html_e( 'Add New', 'wordpress-theme-task' ); ?></button>
+            </div>
+
+
              <p>
                 <label for="service1"><?php esc_html_e( 'service1', 'wordpress-theme-task' );?></label>
                 <input type="text" class="widefat" value="<?php echo esc_attr( $service1 );?>" name="service1" id="service1" placeholder="service1">

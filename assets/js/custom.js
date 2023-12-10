@@ -11,5 +11,6 @@
 
     // mixitup filter
     var mixer = mixitup(".mix-filter-wrapper");
+
   });
 })(jQuery);
