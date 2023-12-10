@@ -1,5 +1,6 @@
 @import url('styles-parts/services-section.css');
 @import url('styles-parts/pricing-section.css');
+@import url('styles-parts/navigation-menu.css');
 
 /*********************************
     [Basic]
@@ -193,6 +194,10 @@ img.attachment-post-thumbnail {
 .slider-items {
     align-items: center;
     justify-content: space-between;
+}
+
+.slider-items p{
+	text-transform: capitalize;
 }
 
 .pt-200{

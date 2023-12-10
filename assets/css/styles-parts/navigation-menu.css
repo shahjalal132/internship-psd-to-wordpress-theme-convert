@@ -1,0 +1,72 @@
+/* Navbar css */
+
+#menu-header-menu > li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align: baseline;
+    padding: 17px 25px;
+    font-weight: 500;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+#menu-header-menu li:hover > ul{
+    display: block !important;
+}
+
+.dropdown-menu {
+    background-color: #FF6D3C;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* 
+.dropdown-menu li{
+    background-color: transparent !important;
+}
+
+.dropdown-menu li:hover{
+    background-color: transparent !important;
+}
+*/
+
+.dropdown-menu li a {
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px;
+    vertical-align: baseline;
+    padding: 5px 0 !important;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff !important;
+} 
+
+.dropdown-menu li a:hover{
+    background-color: transparent !important;
+}
+
+.dropdown-menu li a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 5px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.dropdown-menu li a:hover::after{
+    width: 100%;
+}
+
+a.dropdown-item{
+    color: #fff !important;
+}
