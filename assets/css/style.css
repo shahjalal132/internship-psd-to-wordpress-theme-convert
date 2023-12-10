@@ -161,18 +161,15 @@ footer#footer {
 }
 
 .slick-dots li button{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background-color: transparent;
-	border: 1 px solid #3c3664;
-	margin: 7px;
-	border-radius: 50%;
-	cursor: pointer;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
+	font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #336;
+    outline: none;
+	background: transparent;
+    margin-bottom: 0;
+    padding: 2px;
 }
 
 .slider-active{
