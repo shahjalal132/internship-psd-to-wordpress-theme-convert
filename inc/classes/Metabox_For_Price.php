@@ -53,7 +53,7 @@
             <p>
                 <label for="select_currency_symbol">Select Currency</label>
                 <select name="select_currency" id="select_currency_symbol">
-                    <?php echo get_currency_symbol(); ?>
+                    <?php echo get_currency(); ?>
                 </select>
             </p>
 

@@ -33,45 +33,40 @@ if ( !function_exists( 'get_monthly_yearly_plan' ) ) {
 }
 
 // Currency symbol dynamic
-if ( !function_exists( 'get_currency_symbol' ) ) {
-    function get_currency_symbol() {
+if ( !function_exists( 'get_currency' ) ) {
+    function get_currency() {
         $currency_symbols = [
-            'USD' => '$',
-            'EUR' => '€',
-            'GBP' => '£',
-            'JPY' => '¥',
-            'AUD' => '$',
-            'CAD' => '$',
-            'CHF' => 'CHF',
-            'CNY' => '¥',
-            'SEK' => 'kr',
-            'NZD' => '$',
-            'MXN' => '$',
-            'SGD' => '$',
-            'HKD' => '$',
-            'NOK' => 'kr',
-            'TRY' => '₺',
-            'RUB' => '₽',
-            'INR' => '₹',
-            'BRL' => 'R$',
-            'ZAR' => 'R',
-            'AED' => 'د.إ',
-            'SAR' => '﷼',
-            'PLN' => 'zł',
-            'KRW' => '₩',
-            'DKK' => 'kr',
-            'THB' => '฿',
-            'MYR' => 'RM',
-            'IDR' => 'Rp',
-            'PHP' => '₱',
-            'CZK' => 'Kč',
-            'HUF' => 'Ft',
+            "USD" => "$", // US Dollar
+            "EUR" => "€", // Euro
+            "GBP" => "£", // British Pound
+            "INR" => "₹", // Indian Rupee
+            "AUD" => "$", // Australian Dollar
+            "CAD" => "$", // Canadian Dollar
+            "SGD" => "$", // Singapore Dollar
+            "CHF" => "Fr.", // Swiss Franc
+            "MYR" => "RM", // Malaysian Ringgit
+            "JPY" => "¥", // Japanese Yen
+            "CNY" => "¥", // Chinese Yuan Renminbi
+            "NZD" => "$", // New Zealand Dollar
+            "THB" => "฿", // Thai Baht
+            "HUF" => "Ft", // Hungarian Forint
+            "RUB" => "₽", // Russian Ruble
+            "MXN" => "$", // Mexican Peso
+            "ZAR" => "R", // South African Rand
+            "TRY" => "₺", // Turkish Lira
+            "BRL" => "R$", // Brazilian Real
+            "IDR" => "Rp", // Indonesian Rupiah
+            "KRW" => "₩", // South Korean Won
+            "PHP" => "₱", // Philippine Peso
+            "PLN" => "zł", // Polish Zloty
+            "BDT" => "৳", // Bangladeshi Taka
         ];
 
         if ( is_array( $currency_symbols ) && count( $currency_symbols ) > 0 ) {
             foreach ( $currency_symbols as $key => $value ) {
+                $select_currency_symbol = get_post_meta( get_the_ID(), '_select_currency', true );
                 ?>
-                    <option value="<?php echo esc_attr( $key ); ?>">
+                    <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $select_currency_symbol, $key ); ?>>
                         <?php esc_html_e( $key, 'wordpress-theme-task' );?>
                     </option>
                 <?php
