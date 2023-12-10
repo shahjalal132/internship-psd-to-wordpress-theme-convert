@@ -48,6 +48,7 @@
          $service4 = get_post_meta( $post->ID, '_service4', true );
          $service5 = get_post_meta( $post->ID, '_service5', true );
          $service6 = get_post_meta( $post->ID, '_service6', true );
+         $perchace_url = get_post_meta( $post->ID, '_perchace_url', true );
          ?>
 
             <p>
@@ -108,6 +109,10 @@
                 <label for="service6"><?php esc_html_e( 'service6', 'wordpress-theme-task' );?></label>
                 <input type="text" class="widefat" value="<?php echo esc_attr( $service6 );?>" name="service6" id="service6" placeholder="service6">
             </p>
+             <p>
+                <label for="perchance_url"><?php esc_html_e( 'Perchace URL', 'wordpress-theme-task' );?></label>
+                <input type="text" class="widefat" value="<?php echo esc_attr( $perchace_url );?>" name="perchace_url" id="perchace_url" placeholder="Perchace URL">
+            </p>
          <?php
      }
  
@@ -130,6 +135,7 @@
          $service4   = isset( $_POST['service4'] ) ? $_POST['service4'] : '';
          $service5   = isset( $_POST['service5'] ) ? $_POST['service5'] : '';
          $service6   = isset( $_POST['service6'] ) ? $_POST['service6'] : '';
+         $perchace_url   = isset( $_POST['perchace_url'] ) ? $_POST['perchace_url'] : '';
 
         //  update meta value
          if ( array_key_exists( 'select_currency', $_POST ) ) {
@@ -161,6 +167,9 @@
          }
          if ( array_key_exists( 'select_price_plan', $_POST ) ) {
              update_post_meta( $post_id, '_select_price_plan', $select_price_plan );
+         }
+         if ( array_key_exists( 'perchace_url', $_POST ) ) {
+             update_post_meta( $post_id, '_perchace_url', $perchace_url );
          }
      }
  }

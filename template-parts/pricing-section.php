@@ -58,6 +58,7 @@
                             $service4 = get_post_meta( $post->ID, '_service4', true );
                             $service5 = get_post_meta( $post->ID, '_service5', true );
                             $service6 = get_post_meta( $post->ID, '_service6', true );
+                            $perchace_url = get_post_meta( $post->ID, '_perchace_url', true );
                                 ?>
                                      <div class="mix <?php echo $select_price_plan; ?> col-lg-4 col-md-6 col-sm-12">
                                         <div class="pricing-package-card <?php echo $select_price_plan; ?>">
@@ -80,7 +81,7 @@
                                                 <li class="common-description"> <?php echo $service5; ?></li>
                                                 <li class="common-description"> <?php echo $service6; ?></li>
                                             </ul>
-                                            <a href="#" class="buy-now-btn">Buy Now</a>
+                                            <a href="<?php echo $perchace_url; ?>" class="buy-now-btn">Buy Now</a>
                                         </div>
                                     </div>
                                 <?php
