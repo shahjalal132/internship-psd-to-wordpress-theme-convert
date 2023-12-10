@@ -20,7 +20,11 @@
         </div>
     </div>
     
-    <div class="app-slider-bottom"></div>
+    <div class="app-slider-bottom">
+        <div class="container">
+            
+        </div>
+    </div>
 
 </section>
 <!-- ========== End app slider section ========== -->
